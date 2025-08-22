@@ -1,0 +1,103 @@
+.contact-page-container { margin-right: 61px }
+.contact-page-content .left-side { padding-left: 0 }
+
+.contact-title { margin-bottom: 73px }
+
+.contact-content {
+  margin-left: 62px;
+  margin-bottom: 73px;
+}
+.contact-map {
+  max-width: 664px;
+  width: 100%;
+  height: 469px;
+}
+
+.contact-info {
+  max-width: 541px;
+  width: 100%;
+  height: 132px;
+}
+
+.contact-info-wrapp {
+  height: 469px;
+  display: var(--d-flex);
+  flex-direction: var(--fd-col);
+  justify-content: inherit;
+  padding-left: 66px
+}
+
+.contact-info-link {
+  font-weight: 900;
+  font-size: var(--fsz-36);
+  line-height: 49px;
+  text-transform: uppercase;
+  color: var(--2A4B8E);
+}
+
+.contact-info-text-sm, .contact-info-link-sm {
+  font-weight: 900;
+  font-size: var( --fsz-16);
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.contact-info-text-sm { color: var(--000) }
+.contact-info-link-sm { color: var(--2A4B8E) }
+
+.contact-info-text-lg {
+  font-weight: 900;
+  font-size: var(--fsz-24);
+  line-height: 33px;
+  text-transform: uppercase;
+  color: var(--000);
+}
+
+@media (width <= 1400px) {
+  .contact-content {
+    flex-direction: var(--fd-col);
+    margin-left: 0;
+  }
+  
+  .contact-info-wrapp { padding-left: 0 }
+
+  .contact-map { width: -webkit-fill-available }
+  .contact-page-container { margin-right: 0 }
+}
+
+@media (width <= 1200px) {
+  .contact-page-content { padding: 0 2.5vw }
+  .contact-map { max-width: 100% }
+}
+
+@media (width <= 992px) {
+  .contact-page-wrapp .main-hamburger-btn {
+    margin: 0 2.5vw;
+  }
+
+  .contact-title {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (width <= 768px) {
+  .contact-content { margin-bottom: 25px }
+
+  .contact-info-wrapp {
+    height: 400px;
+    margin-top: 20px;
+  }
+  .contact-info-link {
+    font-size: var(--fsz-24);
+    line-height: var(--initial);
+  }
+
+  .contact-info-text-lg {
+    line-height: var(--initial);
+    font-size: var(--fsz-20);
+  }
+}
+
+@media (width <= 576px) {
+  .contact-page-wrapp .main-hamburger-btn { margin: 0 20px }
+}

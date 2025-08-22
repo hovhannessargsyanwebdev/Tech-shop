@@ -1,0 +1,119 @@
+.catalog-page-container {
+  margin-right: 61px;
+  max-width: 1262px;
+  width: 100%;
+}
+
+.catalog-content .left-side { padding-left: 0 }
+.catalog-page-subheader {
+  display: var(--d-flex);
+  justify-content: var(--jc-sb);
+}
+
+.catalog-page-content, .proector-page-content, .proector-page-content {
+  display: var(--d-flex);
+  flex-wrap: var(--f-wrap);
+  justify-content: var(--jc-sb);
+  margin-top: 36px;
+}
+
+.catalog-content-item {
+  display: var(--d-flex);
+  justify-content: var(--jc-c);
+  text-align: center;
+  width: 30%;
+  min-width: 186px;
+  margin-bottom: 75px;
+  padding: 5px 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.catalog-content-item:hover  {
+  box-shadow: -5px -5px 7px rgba(199, 214, 232, 0.16), 5px 5px 7px rgba(42, 75, 142, 0.16);
+}
+
+.select-wrapp {
+  display: var(--d-flex);
+  align-items: var(--ai-c);
+  position: relative;
+  cursor: pointer;
+}
+
+.select-title {
+  font-weight: 900;
+  font-size: var(--fsz-24);
+  line-height: 33px;
+  color: var(--000);
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 14px;
+}
+
+.select {
+  background: #FFFFFF;
+  box-shadow: -5px -5px 7px rgba(199, 214, 232, 0.16), 5px 5px 7px rgba(42, 75, 142, 0.16);
+  border-radius: 27.5px;
+  padding: 0 95px;
+  margin-right: 14px;
+}
+.select p {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: var(--fsz-22);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.select-wrapp img {
+  width: 27px;
+  height: 22px;
+  transform: rotate(90deg);
+}
+
+.catalog-content-item img {
+  width: 100%;
+  max-width: 250px;
+  height: 255px;
+  object-fit: contain;
+}
+
+.support-admin-link {
+  max-width: 172px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.catalog-content-item span {
+  color: var(--000);
+  text-align: center;
+}
+
+@media (width <= 1200px) {
+  .catalog-page-container { margin-right: 0 }
+}
+
+@media (width <= 992px) {
+  .catalog-page-subheader { justify-content: var(--jc-c) }
+}
+
+@media (width <= 768px) {
+  .catalog-page-content {
+    flex-direction: var(--fd-col);
+    justify-content: var(jc-c);
+  }
+
+  .catalog-content { justify-content: var(--jc-c) }
+
+  .catalog-content-item img { max-width: var(--initial) }
+
+  .catalog-content-item { width: 100% }
+}
+
+@media (width <= 576px) {
+  .select-title { margin-right: 0 }
+  .select {
+    padding: 0 35%;
+    margin-right: 0;
+  }
+}
+

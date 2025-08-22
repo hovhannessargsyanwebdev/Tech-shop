@@ -1,0 +1,117 @@
+.brand-page-container {
+  margin-right: 61px;
+  max-width: 1262px;
+  width: 100%;
+}
+
+.brand-page-subheader {
+  display: var(--d-flex);
+  justify-content: var(--jc-end);
+  align-items: var(--ai-c);
+}
+
+.brand-page-title {  width: 75% }
+
+.product-list {
+  display: var(--d-flex);
+  justify-content: var(--jc-sb);
+  padding-left: 29px;
+}
+
+.product-list ul {
+  list-style: none;
+  margin-right: 0.5%;
+}
+.product-list a {
+  color: var(--000);
+  font-size: var(--fsz-20);
+  font-weight: 900;
+  line-height: 27px;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+}
+
+.product-list a:hover {
+  text-decoration: underline;
+  color :var(--0F4DBC)
+}
+
+.brand-list {
+  display: var(--d-flex);
+  flex-wrap: var(--f-wrap);
+  justify-content: var(--jc-sb);
+  margin-top: 36px;
+}
+
+.brand-list-item {
+  margin-bottom: 90px;
+  width: 24%;
+  min-width: 170px;
+}
+
+.brand-list-item img {
+  width: 100%;
+  max-width: 250px;
+}
+
+@media (width <= 1600px) {
+  .product-list ul {
+    margin-right: 15px;
+   }
+}
+@media (width <= 1400px) {
+  .product-list {
+    flex-wrap: var(--f-wrap);
+  }
+}
+
+@media (width <= 1200px) {
+  .brand-page-content { padding: 0 2.5vw }
+  .brand-page-container { margin-right: 0 }
+  .brand-page-content .left-side { padding: 0 }
+  .brand-list-item {
+    min-width: 170px;
+  }
+  .product-list { padding-left: 0 }
+}
+
+@media (width <= 992px) {
+  .product-list { display: var(--d-none) }
+  .brand-page-title { width: var(--initial) }
+  .product-list a {
+    padding: 2% 0;
+    text-align: center;
+    display: var(--d-block);
+  }
+
+  .brand-page-subheader { justify-content: var(--jc-c) }
+  .brand-list {
+    justify-content: var(--jc-se);
+    margin-top: 0;
+  }
+
+  .brand-list-item { min-width: 186px }
+
+  .brands-page-wrapp .main-hamburger-btn { margin: 0 2.5vw }
+}
+
+@media (width <= 768px) {
+  .brand-page-content { padding: 0 20px }
+  .brands-page-wrapp .main-hamburger-btn { margin: 0 20px }
+  .nav-link { width: 50% }
+  .brand-list { justify-content: space-evenly}
+}
+
+@media (width <= 576px) {
+  .brands-page-wrapp ul { flex-direction: var(--fd-col) }
+
+  .brands-page-wrapp ul li {
+    width: var(--initial);
+    margin-left: 0;
+  }
+  .product-list { flex-direction: var(--fd-col) }
+
+  .brand-list-item { margin-bottom: 15px }
+
+  .product-list ul { width: 100% }
+}

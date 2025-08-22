@@ -1,0 +1,140 @@
+.trash-page-container {
+  margin: 0 37px;
+  max-width: 1450px;
+  width: 100%;
+}
+.trash-page-content {
+  max-width: 1920px;
+}
+.trash-subheader {
+  display:flex;
+  text-transform: uppercase;
+  background-color: #2A4B8E;
+  color: white;
+  justify-content: space-between;
+  height: 46px;
+  box-shadow: -5px -5px 7px rgba(199, 214, 232, 0.16), 5px 5px 7px rgba(42, 75, 142, 0.16);
+  border-radius: 27.5px;
+  padding: 0 1rem;
+  align-items: center;
+  font-size: 18px;
+}
+.trash-div {
+  align-items:center;
+  display: flex;
+}
+
+.trash-container {
+  text-transform: uppercase;
+  align-items:center;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 27px;
+  font-size: 20px;
+}
+.trash-h1 {
+  margin-top: 26px;
+  margin-bottom: 44px;
+}
+.trash-div p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.trash-text {
+  margin-left: 62px;
+}
+
+.trash-count p {
+  margin-right: 127px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  border: 2px solid #2A4B8E;
+  padding: 1rem;
+}
+
+.trash-container img{
+  width: 133px;
+  height: 133px;
+}
+
+.trash-subheader h2 {
+  margin-right: 80px;
+}
+hr {
+  background-color: #2A4B8E;
+  height: 2px;
+}
+.trash-button {
+  display: flex;
+  justify-content: center;
+}
+.trash-button button {
+  background: #FFFFFF;
+  box-shadow: -5px -5px 7px rgba(199, 214, 232, 0.16), 5px 5px 7px rgba(42, 75, 142, 0.16);
+  border-radius: 27.5px;
+  width: 432px;
+  height: 69px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  cursor: pointer;
+}
+
+
+@media (width <= 1400px) {
+  .trash-count p {
+    margin-right: 50px;
+  }
+  .trash-subheader h2{
+    margin-right:10px;
+  }
+}
+
+@media (width <= 1200px) {
+  .trash-page-wrapp { padding: 31.5px 2.5vw }
+  .left-side { padding-left: 0 }
+  .trash-text {
+    margin-left: 15px;
+  }
+  .trash-count p {
+      margin-right: 10px;
+  }
+  .trash-subheader h2{
+      margin-right:0px;
+  }
+}
+
+@media (width <= 768px) {  
+  .trash-page-wrapp { padding: 31.5px 20px }
+  .trash-text h1 {
+    font-size:16px
+  }
+  .trash-page-container {margin: 0;}
+  .trash-text p {
+    font-size:12px
+  }
+}
+
+@media (width <= 576px) {
+  .trash-subheader h2{
+    font-size: 12px;
+  }
+  .trash-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .trash-button button {
+    width: 290px;
+    height: 50px;
+    font-weight: normal;
+    font-size: var(--fsz-20);
+  }
+}
