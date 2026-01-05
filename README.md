@@ -1,5 +1,8 @@
 # Technik Shop
 
+🔗 **Live Demo:**  
+https://www.videotrade.ru/
+
 Technik Shop is an online electronics store website. It is built using pure HTML5, CSS, JavaScript, and WordPress. The site provides a clean and user-friendly interface for browsing and purchasing various tech products.
 
 ## Technologies Used
